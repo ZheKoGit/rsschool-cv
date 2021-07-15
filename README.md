@@ -1,1 +1,0 @@
-https://ZheKoGit.github.io/rsschool-cv/cv
