@@ -1,15 +1,22 @@
 # Front-end Developer
 
-## Name and surname
+**Name and surname**
 Evgeniy Kochu
 
-## Contacts for communication
-**E-mail:** evgeniykochu@gmail.com
+**Github**
+https://github.com/ZheKoGit
+
+**Contacts for communication**
+*E-mail:* evgeniykochu@gmail.com
+
+---
 
 ## Brief information about yourself
-I am looking for a permanent job as a Junior Frontend developer.
-**My goal:** to develop in the interesting field of web development, to gain extensive work experience, to constantly learn and develop in the chosen field.
-**My strengths:** moderately pedantic, purposeful workaholic.
+I am looking for a permanent job as a Junior Frontend developer.  
+
+*My goal:* to develop in the interesting field of web development, to gain extensive work experience, to constantly learn and develop in the chosen field.  
+
+*My strengths:* moderately pedantic, purposeful workaholic.
 
 ## Skills
 * HTML5
