@@ -27,5 +27,6 @@ I am looking for a permanent job as a Junior Frontend developer.
 ##Education
 1998-2003 Moscow University of Consumer Cooperatives,
 Faculty of Economics
+
 ###English
 initial knowledge
