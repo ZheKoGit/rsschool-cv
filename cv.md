@@ -1,12 +1,13 @@
 # Front-end Developer
 
-**Name and surname**
+**Name and surname:**
 Evgeniy Kochu
 
-**Github**
+**Github:**
 https://github.com/ZheKoGit
 
-**Contacts for communication**
+**Contacts for communication**  
+
 *E-mail:* evgeniykochu@gmail.com
 
 ---
