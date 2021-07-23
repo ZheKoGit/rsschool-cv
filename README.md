@@ -1,1 +1,1 @@
-https://ZheKoGit.github.io/rsschool-cv/cv
+https://ZheKoGit.github.io/rsschool-cv/
