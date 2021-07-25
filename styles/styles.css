@@ -79,6 +79,7 @@ a {
 
 .main-header-photo {
 	width: 140px;
+	margin: 0;
 	margin-left: auto;
 }
 .main-header-photo img {
