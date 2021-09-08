@@ -1,3 +1,4 @@
+/*
 body {
 	margin: 0;
 	font-weight: 400;
@@ -69,7 +70,6 @@ a {
 }
 
 .contact-link:hover {
-	/*border-bottom: 1px solid #2AAEE7;*/
 	text-decoration: underline 2px #2AAEE7;
 }
 
@@ -171,3 +171,4 @@ h3 {
 	box-shadow: inset 0px 0px 5px 0px #73808D;
 }
 
+*/

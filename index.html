@@ -6,30 +6,137 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<title>Evgeniy Kochu CV</title>
 </head>
 
 <body>
 	<header class="main-header container">
-		<div class="main-header-text">
-			<h1 class="main-header-title"><span>Evgeniy Kochu </span>Frontend Developer</h1>
-			<ul class="contact-list">
-				<li class="contact-item"><a class="contact-github contact-link"
-						href="https://github.com/ZheKoGit/projects-2021" target="_blank">My projects</a>
-				</li>
-				<li class="contact-item"><a class="contact-mail contact-link"
-						href="mailto:evgeniykochu@gmail.com">evgeniykochu@gmail.com</a></li>
-			</ul>
-		</div>
-		<figure class="main-header-photo">
-			<img src="images/avatar.png" width="100" height="100" alt="Photo Evgeniy Kochu">
-		</figure>
+		<ul class="main-nav">
+			<li class="nav-list"><a class="nav-link" href="#aboutme">About me</a></li>
+			<li class="nav-list"><a class="nav-link" href="#skills">Skills</a></li>
+			<li class="nav-list"><a class="nav-link" href="#projects">My projects</a></li>
+			<li class="nav-list"><a class="nav-link" href="#code">Code example</a></li>
+			<li class="nav-list"><a class="nav-link" href="#education">Education</a></li>
+			<li class="nav-list"><a class="nav-link" href="#experience">Experience</a></li>
+			<li class="nav-list"><a class="nav-link" href="#contact">Contact</a></li>
+		</ul>
 	</header>
 
 	<main class="main container">
-		<div class="main-left-wrapper">
-			<section class="experience">
-				<h2>experience</h2>
+		<section class="face">
+			<div class="face-text">
+				<h1 class="face-title"><span>Evgeniy Kochu </span>Frontend Developer</h1>
+			</div>
+			<figure class="face-photo">
+				<img src="images/avatar.png" width="100" height="100" alt="Photo Evgeniy Kochu">
+				<figcaption class="face-photo-link">
+					<ul class="face-photo-list">
+						<li class="face-photo-item">
+							<a class="face-github contact-link" href="https://github.com/ZheKoGit" target="_blank">My
+								GitHub</a>
+						</li>
+						<li class="face-photo-item">
+							<a class="face-mail contact-link" href="mailto:evgeniykochu@gmail.com"
+								target="_blank">evgeniykochu@gmail.com</a>
+						</li>
+					</ul>
+				</figcaption>
+			</figure>
+		</section>
+		<section class="aboutme" id="aboutme">
+			<h2 class="main-title">About me</h2>
+			<div class="aboutme-text">
+				<p>To develop in the interesting field of web development, to gain extensive work experience, to
+					constantly learn and develop in the chosen field.</p>
+				<p>Moderately pedantic, purposeful workaholic.</p>
+			</div>
+		</section>
+		<section class="skills" id="skills">
+			<h2 class="main-title">Skills</h2>
+			<ul>
+				<li class="skills-item">
+					<h3>Coding</h3>
+					<ul class="skills-item-list">
+						<li>HTML</li>
+						<li>CSS/CSS3</li>
+					</ul>
+				</li>
+				<li class="skills-item">
+					<h3>Tools & Technologies</h3>
+					<ul class="skills-item-list">
+						<li>Visual Studio</li>
+						<li>Figma</li>
+					</ul>
+				</li>
+				<li class="skills-item">
+					<h3>Languages</h3>
+					<ul class="skills-item-list">
+						<li>English (basic)</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section class="projects" id="projects">
+			<h2 class="main-title">Projects</h2>
+			<div class="projects-wrap">
+				<div class="projects-museum">
+					<h3>Louvre Museum</h3>
+					<a class="projects-link" href="https://rolling-scopes-school.github.io/zhekogit-JSFEPRESCHOOL/museum/"
+						target="_blank">
+						<img class="projects-img" src="images/project_museum.png" alt="Louvre Museum">
+					</a>
+				</div>
+				<div class="projects-travel">
+					<h3>Travel blog</h3>
+					<a class="projects-link" href="https://zhekogit.github.io/projects-2021/travel-blog-grid/"
+						target="_blank">
+						<img class="projects-img" src="images/project_travel_blog.png" alt="Travel blog">
+					</a>
+				</div>
+			</div>
+		</section>
+		<section class="code" id="code">
+			<h2 class="main-title">Code example</h2>
+			<details>
+				<summary class="code-name">Jaden Casing Strings</summary>
+				<pre>
+					<code class="JavaScript">
+						// you'll have to capitalize each word
+					String.prototype.toJadenCase = function () {
+						str = this;
+						let word = str[0].toUpperCase();
+						let result = '';
+						for (let i = 1; i <= str.length; i += 1) {
+						  if (str[i] !== ' ' & str[i] !== undefined) {
+							 word += str[i];
+						  } else if (str[i] === ' ') {
+							 result += `${word} ${str[i + 1].toUpperCase()}`;
+							 word = '';
+							 i += 1;
+						  } else {
+							 result += word;
+						  }
+						}
+						return result;
+					 };
+					</code>
+				</pre>
+			</details>
+		</section>
+		<section class="education" id="education">
+			<h2 class="main-title">education</h2>
+			<div class="education-inner">
+				<h3>Faculty of Economics</h3>
+				<p class="education-name сompany-name">Moscow University of Consumer Cooperatives</p>
+				<p class="main-data education-data">1998-2003</p>
+			</div>
+		</section>
+		<section class="experience" id="experience">
+			<h2 class="main-title">experience</h2>
+			<div class="experience-inner">
 				<h3>Service Engineer</h3>
 				<p class="experience-сompany-name сompany-name">Outsourcing of Sberbank of Russia</p>
 				<p class="main-data experience-data">2015-2020</p>
@@ -39,58 +146,23 @@
 					<li class="experience-item">repair of device modules</li>
 					<li class="experience-item">replacement of consumables and branding of devices</li>
 				</ul>
-			</section>
-			<section class="education">
-				<h2>education</h2>
-				<h3>Faculty of Economics</h3>
-				<p class="education-name сompany-name">Moscow University of Consumer Cooperatives</p>
-				<p class="main-data education-data">1998-2003</p>
-			</section>
-		</div>
+			</div>
 
-		<div class="main-right-wrapper">
-			<section class="summary">
-				<h2>summary</h2>
-				<div class="main-right-inner">
-					<h3>My goal</h3>
-					<p>To develop in the interesting field of web development, to gain extensive work experience, to
-						constantly learn and develop in the chosen field.</p>
-				</div>
-				<div class="main-right-inner">
-					<h3>My strengths</h3>
-					<p>Moderately pedantic, purposeful workaholic.</p>
-				</div>
-			</section>
-			<section class="skills">
-				<h2>skills</h2>
-				<ul>
-					<li class="main-right-inner">
-						<h3>Coding</h3>
-						<ul class="skills-list">
-							<li>HTML</li>
-							<li>CSS/CSS3</li>
-						</ul>
-					</li>
-					<li class="main-right-inner">
-						<h3>Tools & Technologies</h3>
-						<ul class="skills-list">
-							<li>Visual Studio</li>
-							<li>Figma</li>
-						</ul>
-					</li>
-					<li class="main-right-inner">
-						<h3>Languages</h3>
-						English (basic)
-					</li>
-				</ul>
-			</section>
-		</div>
+		</section>
 	</main>
 
-	<footer class="main-footer container">
+	<footer class="main-footer container" id="contact">
 		<address>
-			<a class="contact-github contact-link" href="https://github.com/ZheKoGit" target="_blank">My code in GitHub</a>
-			<p>CV created in 2021</p>
+			<ul class="contact-list">
+				<li class="contact-item">
+					<a class="contact-github contact-link" href="https://github.com/ZheKoGit" target="_blank">My GitHub</a>
+				</li>
+				<li class="contact-item">
+					<a class="contact-mail contact-link" href="mailto:evgeniykochu@gmail.com"
+						target="_blank">evgeniykochu@gmail.com</a>
+				</li>
+			</ul>
+			<p>2021</p>
 			<div class="main-footer-logo">
 				<a class="logo" href="https://rs.school/js/" target="_blank"><img src="images/rs_school_js.svg" width="100"
 						alt="Logo RSSchool"></a>
