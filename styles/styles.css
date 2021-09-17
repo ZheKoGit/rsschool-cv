@@ -117,11 +117,11 @@ h3 {
 }
 
 .face-github {
-	background-image: url(/images/github.svg);
+	background-image: url(../images/github.svg);
 }
 
 .face-mail {
-	background-image: url(/images/email.png);
+	background-image: url(../images/email.png);
 }
 
 .face-link:hover {
@@ -249,11 +249,11 @@ h3 {
 }
 
 .footer-github {
-	background-image: url(/images/github.svg);
+	background-image: url(../images/github.svg);
 }
 
 .footer-mail {
-	background-image: url(/images/email.png);
+	background-image: url(../images/email.png);
 }
 
 .logo {
