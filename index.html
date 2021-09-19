@@ -13,7 +13,11 @@
 </head>
 
 <body>
-	<header class="main-header">
+	<header class="main-header" id="header">
+		<div class="icon-home"><a class="icon-home-link" href="#header"></a></div>
+		<div class="menu-icon">
+			<span></span>
+		</div>
 		<ul class="container main-nav">
 			<li class="nav-list"><a class="nav-link" href="#aboutme">About me</a></li>
 			<li class="nav-list"><a class="nav-link" href="#skills">Skills</a></li>
@@ -59,25 +63,25 @@
 		<section class="skills container" id="skills">
 			<h2 class="main-title">Skills</h2>
 			<ul class="description skills-description">
-				<li class="skills-item">
+				<li class="skills-inner">
 					<h3>Coding</h3>
-					<ul class="skills-item-list">
-						<li>HTML</li>
-						<li>CSS/CSS3</li>
-						<li>JavaScript</li>
+					<ul class="skills-inner-list">
+						<li class="list-item skills-item">HTML</li>
+						<li class="list-item skills-item">CSS/CSS3</li>
+						<li class="list-item skills-item">JavaScript</li>
 					</ul>
 				</li>
-				<li class="skills-item">
+				<li class="skills-inner">
 					<h3>Tools & Technologies</h3>
-					<ul class="skills-item-list">
-						<li>Visual Studio</li>
-						<li>Figma</li>
+					<ul class="skills-inner-list">
+						<li class="list-item skills-item">Visual Studio</li>
+						<li class="list-item skills-item">Figma</li>
 					</ul>
 				</li>
-				<li class="skills-item">
+				<li class="skills-inner">
 					<h3>Languages</h3>
-					<ul class="skills-item-list">
-						<li>English (basic)</li>
+					<ul class="skills-inner-list">
+						<li class="list-item skills-item">English (basic)</li>
 					</ul>
 				</li>
 			</ul>
@@ -89,17 +93,19 @@
 					<h3>Louvre Museum</h3>
 					<a class="projects-link" href="https://rolling-scopes-school.github.io/zhekogit-JSFEPRESCHOOL/museum/"
 						target="_blank">
-						<img class="projects-img" src="images/project_museum.png" width="220px" height="186"
+						<img class="projects-img" src="images/project_museum.png" width="220" height="186"
 							alt="Louvre Museum">
 					</a>
+					<p class="projects-text">HTML, CSS</p>
 				</div>
 				<div class="projects-inner projects-travel">
 					<h3>Travel blog</h3>
 					<a class="projects-link" href="https://zhekogit.github.io/projects-2021/travel-blog-grid/"
 						target="_blank">
-						<img class="projects-img" src="images/project_travel_blog.png" width="220px" height="186"
+						<img class="projects-img" src="images/project_travel_blog.png" width="220" height="186"
 							alt="Travel blog">
 					</a>
+					<p class="projects-text">HTML, CSS</p>
 				</div>
 			</div>
 		</section>
@@ -107,12 +113,12 @@
 			<h2 class="main-title">Code example</h2>
 			<div class="description code-description">
 				<h3>Jaden Casing Strings</h3>
-				<pre><code class="JavaScript">// you'll have to capitalize each word
+				<pre><code class="JavaScript jscode">// you'll have to capitalize each word
 String.prototype.toJadenCase = function () {
  str = this;
  let word = str[0].toUpperCase();
  let result = '';
- for (let i = 1; i <= str.length; i += 1) {
+ for (let i = 1; i &lt;= str.length; i += 1) {
   if (str[i] !== ' ' & str[i] !== undefined) {
     word += str[i];
   } else if (str[i] === ' ') {
@@ -143,10 +149,11 @@ String.prototype.toJadenCase = function () {
 				<p class="experience-сompany-name сompany-name">Outsourcing of Sberbank of Russia</p>
 				<p class="main-data experience-data">2015-2020</p>
 				<ul class="experience-list">
-					<li class="experience-item">identifying the causes of device malfunction, troubleshooting and testing
+					<li class="list-item experience-item">identifying the causes of device malfunction, troubleshooting and
+						testing
 						devices</li>
-					<li class="experience-item">repair of device modules</li>
-					<li class="experience-item">replacement of consumables and branding of devices</li>
+					<li class="list-item experience-item">repair of device modules</li>
+					<li class="list-item experience-item">replacement of consumables and branding of devices</li>
 				</ul>
 			</div>
 		</section>
@@ -154,7 +161,7 @@ String.prototype.toJadenCase = function () {
 
 	<footer class="main-footer" id="contact">
 		<address class="footer-wrap container">
-			<ul class="footer-contact-list">
+			<ul class="footer-inner footer-contact-list">
 				<li class="footer-contact-item">
 					<a class="footer-github footer-link" href="https://github.com/ZheKoGit" target="_blank">GitHub</a>
 				</li>
@@ -163,13 +170,14 @@ String.prototype.toJadenCase = function () {
 						target="_blank">evgeniykochu@gmail.com</a>
 				</li>
 			</ul>
-			<p>2021</p>
-			<div class="main-footer-logo">
+			<p class="footer-inner footer-year">2021</p>
+			<div class="footer-inner main-footer-logo">
 				<a class="logo" href="https://rs.school/js/" target="_blank"><img src="images/rs_school_js.svg" width="100"
 						alt="Logo RSSchool"></a>
 			</div>
 		</address>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
